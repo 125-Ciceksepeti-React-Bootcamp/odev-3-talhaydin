@@ -1,0 +1,117 @@
+.card-container {
+  display: flex;
+  min-height: 400px;
+
+  flex: 0 1 12%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 4px solid rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  align-self: stretch;
+  position: relative;
+}
+
+.deletebutton {
+  background-color: rgb(209, 37, 37);
+  font-size: 22px;
+  width: 32px;
+  height: 32px;
+  font-weight: 500;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-top: 50px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 1;
+}
+
+.editbutton {
+  margin-left: 10px;
+  background-color: rgb(43, 158, 87);
+  font-size: 22px;
+  height: 32px;
+  font-weight: 500;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-top: 50px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+  position: absolute;
+  margin-top: 20px;
+  bottom: 0;
+  right: 0;
+}
+
+.modal_close_button {
+  background-color: rgb(54, 54, 54);
+  font-size: 22px;
+  height: 32px;
+  font-weight: 500;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+  margin-left: 10px;
+  display: block;
+}
+
+.modalinput {
+  padding: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 60%;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
+.modal_edit {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(43, 158, 87);
+  font-size: 22px;
+  height: 32px;
+  font-weight: 500;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+  .card-container {
+    flex: 0 1 20%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card-container {
+    flex: 0 1 24%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .card-container {
+    flex: 0 1 100%;
+  }
+  .ReactModal__Content {
+    width: 100%;
+    height: 100%;
+  }
+}

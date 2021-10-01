@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.header input {
+  width: 300px;
+  padding: 8px;
+  border-radius: 5px;
+  margin-left: auto;
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+}
